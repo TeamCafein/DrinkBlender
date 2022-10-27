@@ -8,18 +8,12 @@ use liquidfun::box2d::{
     },
 };
 
-pub fn createWorld() -> World {
+use crate::rect::Rect;
+
+pub fn create_world() -> World {
     let mut world = World::new(&Vec2::new(0.0, -10.0));
 
-    let mut ground_body_def = BodyDef::default();
-    ground_body_def.position.set(0.0, -10.0);
-
-    let ground_body = world.create_body(&ground_body_def);
-
-    let mut ground_box = PolygonShape::new();
-    ground_box.set_as_box(50.0, 10.0);
-
-    ground_body.create_fixture(&FixtureDef::new(&ground_box));
+    let ground = Rect::new(&mut world, 0., -10., 50., 10.);
 
     let mut body_def = BodyDef::default();
     body_def.body_type = BodyType::DynamicBody;
