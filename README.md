@@ -39,15 +39,14 @@
 
  **<음료 제조 시뮬레이터 적용 목표>**<br>
  
-
-
+음료 제조 게임 앱을 앱스토어에 출시
  
 ## 참고자료
 
 num| 사이트
 --------- | ---------
 1 | https://google.github.io/liquidfun/
-2 | 
+2 | https://github.com/JMS55/sandbox
 3 |
 4 | 
 5 | 
