@@ -5,6 +5,7 @@ using Obi;
 [RequireComponent(typeof(BoxCollider2D))]
 public class DragDrop : MonoBehaviour
 {
+    private Rigidbody2D rigidbody;
     private ObiEmitter emitter;
 
     // The plane the object is currently being dragged on
@@ -20,6 +21,7 @@ public class DragDrop : MonoBehaviour
 
     void Awake()
     {
+        rigidbody = GetComponent<Rigidbody2D>();
         emitter = GetComponentInChildren<ObiEmitter>();
     }
 
@@ -46,7 +48,7 @@ public class DragDrop : MonoBehaviour
 
         float planeDist;
         dragPlane.Raycast(camRay, out planeDist);
-        transform.position = camRay.GetPoint(planeDist) + offset;
+        rigidbody.MovePosition(camRay.GetPoint(planeDist) + offset);
     }
 
     private void OnMouseUp()
@@ -71,4 +73,12 @@ public class DragDrop : MonoBehaviour
             emitter.speed = 0;
         }
     }
+
+    //private void FixedUpdate()
+    //{
+    //    if (rigidbody.velocity.magnitude == 1)
+    //    {
+    //        rigidbody.velocity = rigidbody.velocity.normalized * 1;
+    //    }
+    //}
 }
