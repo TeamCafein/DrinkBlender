@@ -2,6 +2,8 @@
 
 ![image](https://github.com/TeamCafein/DrinkBlender/assets/12953393/7d573f90-2a55-48c7-ab0c-4e535363b29e)
 
+![image](https://github.com/TeamCafein/DrinkBlender/assets/12953393/255add21-7de8-43b1-9803-651f933f39aa)
+
 >**카페 음료 제조 시뮬레이터** 
 
 2022 한세대학교 IT학부 졸업프로젝트
