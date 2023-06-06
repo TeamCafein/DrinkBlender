@@ -1,6 +1,6 @@
 # DrinkBlender
 
-![Concept](Concept.png)
+![image](https://github.com/TeamCafein/DrinkBlender/assets/12953393/7d573f90-2a55-48c7-ab0c-4e535363b29e)
 
 >**카페 음료 제조 시뮬레이터** 
 
